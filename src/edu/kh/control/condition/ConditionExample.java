@@ -117,76 +117,77 @@ public class ConditionExample {
 		 int input1 = sc.nextInt();
 		 String result;
 		 if(input1>=90&&input1<=100) {
-			 rseult ="A"; 
+			 result ="A"; 
 	 }
 		 else if(input1<0||input1>100) {
-	        rseult = "잘못입력하셨습니다"; 
+			 result = "잘못입력하셨습니다"; 
 	         }
 		 else if(input1>=80) {
-			 rseult ="B";	
+			 result ="B";	
 			 }
 		 else if(input1>=70) {
-			 rseult ="C";	
+			 result ="C";	
 			 }
 		 else if(input1>=60) {
-			 rseult ="D";	
+			 result ="D";	
 			 }
-		 else rseult = "F";	
+		 else result = "F";	
 		 System.out.println(result);
 	 }
 	 public void ex7() {
 		
 		 System.out.println("나이 : ");
-		 int input1 = sc.nextInt();
-		 String result;
-		 if(input1<0||input1>100) {
-		     result = "잘못 입력 하셨습니다.";
-			}
-		 else { System.out.println("키 입력 : ");
-		 		double height = sc.nextDouble();
-		 if (age<12) {
-			 result = "적정 연령이 아닙니다.";
-		 }
-		 }
-		
-		 else if(height<140) {		 
-			 result = "적정 키가 아닙니다.";
-		 }
-		 else {
-			 result = "탑승 가능";
-		 }
-		
+//		 int input1 = sc.nextInt();
+//		 String result;
+//		 if(input1<0||input1>100) {
+//		     result = "잘못 입력 하셨습니다.";
+//			}
+//		 else { System.out.println("키 입력 : ");
+//		 		double height = sc.nextDouble();
+//		 if (age<12) {
+//			 result = "적정 연령이 아닙니다.";
+//		 }
+//		 }
+//		
+//		 else if(height<140) {		 
+//			 result = "적정 키가 아닙니다.";
+//		 }
+//		 else {
+//			 result = "탑승 가능";
+//		 }
+//		
 	 }
 	 public void ex8() {
-		 System.out.println("나이 : ");	
-		 int age = sc.nextInt();
-		 String result;
-		 if(input1<0||input1>100) {
-		     result = "나이를 잘못 입력 하셨습니다.";
-			}
-		 else { System.out.println("키 입력 : ");
-	 		double height = sc.nextDouble();
-		 if(height<0 || height >250) {
-			 result = "키를 잘못 입력 하셨습니다.";
-			 
-		 }else {
-			 if(age<12&&height>=140.0) {
-				 result = "키는 적절하나, 나이가 적절치 않음.";
-			 }
-			 else if(age>=12&&height<140.0) {
-				 result = "나이는 적절하나, 키가 적절치 않음.";
-			 }
-			 else if(age<12&&height<140.0) {
-				 result = "나이 키 모두적절치 않음.";
-			 }
-			 else {
-				 result = "탑승가능"
-			 }
-			 System.out.println(result);	
-		 } 
-		 }
-		 
+//		 System.out.println("나이 : ");	
+//		 int age = sc.nextInt();
+//		 String result;
+//		 if(input1<0||input1>100) {
+//		     result = "나이를 잘못 입력 하셨습니다.";
+//			}
+//		 else { System.out.println("키 입력 : ");
+//	 		double height = sc.nextDouble();
+//		 if(height<0 || height >250) {
+//			 result = "키를 잘못 입력 하셨습니다.";
+//			 
+//		 }else {
+//			 if(age<12&&height>=140.0) {
+//				 result = "키는 적절하나, 나이가 적절치 않음.";
+//			 }
+//			 else if(age>=12&&height<140.0) {
+//				 result = "나이는 적절하나, 키가 적절치 않음.";
+//			 }
+//			 else if(age<12&&height<140.0) {
+//				 result = "나이 키 모두적절치 않음.";
+//			 }
+//			 else {
+//				 result = "탑승가능";
+//			 }
+//			 System.out.println(result);	
+//		 } 
+//		 
+//		 
 		 
 	 
 		
 	 }
+ }
