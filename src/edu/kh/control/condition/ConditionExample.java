@@ -1,7 +1,7 @@
 package edu.kh.control.condition;
 import java.util.Scanner;
 public class ConditionExample {
-	
+	 Scanner sc = new Scanner(System.in);
 	
 	public void ex1(){
 		// if문 
@@ -14,7 +14,7 @@ public class ConditionExample {
 		 * }
 		 */
 		
-		Scanner sc = new Scanner(System.in);
+
 		
 		
 		System.out.print("정수 입력 : ");
@@ -40,7 +40,7 @@ public class ConditionExample {
 		  * }
 		  * 
 		  */
-		Scanner sc = new Scanner(System.in);
+
 		//홀짝입력
 		System.out.println("정수 입력 : ");
 		int input = sc.nextInt();
@@ -63,7 +63,7 @@ public class ConditionExample {
 		 
 		 // 양수,음수, 0 판별
 		 // if - else if -else
-		 Scanner sc = new Scanner(System.in);
+		
 		 System.out.println("정수 입력 :");
 		 int input = sc.nextInt();
 		 if(input >0) { //input 양수
@@ -72,7 +72,7 @@ public class ConditionExample {
 		 else if(input <0) {
 			 System.out.println("음수입니다");
 		 }
-		 else {System.out.println("0입니다");
+		 else { System.out.println("0입니다");
 		 
 		 }
 	 }
@@ -83,7 +83,7 @@ public class ConditionExample {
 		// -12이하 "한파 주의보" 
 		 // 여름일때 온도가 35이상 "폭염경보", 33도이상 "폭염주의보"
 		 // 1~12 사이가 아닐때 " 해당하는 계절이 없습니다 출력
-	  Scanner sc = new Scanner(System.in);
+
 	  System.out.println("달 입력: ");
 	  int input1 = sc.nextInt();
 	  if (input1<=-15) { System.out.println("한파경보");
@@ -100,7 +100,7 @@ public class ConditionExample {
 	 }
 	 
 	 public void ex5() {
-		 Scanner sc = new Scanner(System.in);
+		 
 		 System.out.println("나이 : ");
 		 int input1 = sc.nextInt();
 		 if(input1<=13) {
@@ -112,42 +112,81 @@ public class ConditionExample {
 		 else System.out.println("청소년입니다.");
 	 }
 	 public void ex6() {
-		 Scanner sc = new Scanner(System.in);
+	
 		 System.out.println("점수 : ");
 		 int input1 = sc.nextInt();
+		 String result;
 		 if(input1>=90&&input1<=100) {
-	         System.out.println("A"); 
+			 rseult ="A"; 
 	 }
 		 else if(input1<0||input1>100) {
-	         System.out.println("잘못입력하셨습니다"); 
+	        rseult = "잘못입력하셨습니다"; 
 	         }
 		 else if(input1>=80) {
-			 System.out.println("B");	
+			 rseult ="B";	
 			 }
 		 else if(input1>=70) {
-			 System.out.println("C");	
+			 rseult ="C";	
 			 }
 		 else if(input1>=60) {
-			 System.out.println("D");	
+			 rseult ="D";	
 			 }
-		 else System.out.println("F");	
+		 else rseult = "F";	
+		 System.out.println(result);
 	 }
 	 public void ex7() {
-		 Scanner sc = new Scanner(System.in);
+		
 		 System.out.println("나이 : ");
 		 int input1 = sc.nextInt();
-		 System.out.println("키 : ");
-		 int input2 = sc.nextInt();
-		 if(input1<12&&input1>0) {
-			 System.out.println("적정 연령이 아닙니다.");
-		 }
-		 else if(input1<0||input1>100) {
-		     System.out.println("잘못 입력 하셨습니다.");
+		 String result;
+		 if(input1<0||input1>100) {
+		     result = "잘못 입력 하셨습니다.";
 			}
+		 else { System.out.println("키 입력 : ");
+		 		double height = sc.nextDouble();
+		 if (age<12) {
+			 result = "적정 연령이 아닙니다.";
+		 }
+		 }
 		
-		 else if(input2<140) {		 
-			 System.out.println("적정 키가 아닙니다. ");
+		 else if(height<140) {		 
+			 result = "적정 키가 아닙니다.";
+		 }
+		 else {
+			 result = "탑승 가능";
 		 }
 		
 	 }
-}
+	 public void ex8() {
+		 System.out.println("나이 : ");	
+		 int age = sc.nextInt();
+		 String result;
+		 if(input1<0||input1>100) {
+		     result = "나이를 잘못 입력 하셨습니다.";
+			}
+		 else { System.out.println("키 입력 : ");
+	 		double height = sc.nextDouble();
+		 if(height<0 || height >250) {
+			 result = "키를 잘못 입력 하셨습니다.";
+			 
+		 }else {
+			 if(age<12&&height>=140.0) {
+				 result = "키는 적절하나, 나이가 적절치 않음.";
+			 }
+			 else if(age>=12&&height<140.0) {
+				 result = "나이는 적절하나, 키가 적절치 않음.";
+			 }
+			 else if(age<12&&height<140.0) {
+				 result = "나이 키 모두적절치 않음.";
+			 }
+			 else {
+				 result = "탑승가능"
+			 }
+			 System.out.println(result);	
+		 } 
+		 }
+		 
+		 
+	 
+		
+	 }

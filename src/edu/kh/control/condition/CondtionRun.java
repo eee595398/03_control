@@ -13,7 +13,8 @@ public class CondtionRun {
 		//condition.ex4();
 		//condition.ex5();
 		//condition.ex6();
-		condition.ex7();
+		//condition.ex7();
+		//condition.ex8();
 	}
 
 }
